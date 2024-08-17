@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: #282c34;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+            border-bottom: 1px solid #444;
+        }
+        header img {
+            max-width: 100px; 
+            height: auto;
+            border: 5px solid #444;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #home {
+            background-color: #ffccbc;
+        }
+        #about {
+            background-color: #dcedc8;
+        }
+        #projects {
+            background-color: #c5cae9;
+        }
+        #contact {
+            background-color: #ffe082;
+            margin-bottom: 80px; 
+        }
+        .project img {
+            max-width: 400px; 
+            height: auto;
+            margin: 10px 0;
+        }
+        footer {
+            background: #282c34;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border-top: 1px solid #444;
+        }
+        .contact-info {
+            display: flex;
+            align-items: left;
+            margin-bottom: 10px;
+            justify-content: flex-start;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin-left: 0;
+            padding: 0 10px;
+        }
+        form label {
+            margin-top: 10px;
+        }
+        form input, form textarea {
+            margin-top: 5px;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        form textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        form input[type="submit"] {
+            margin-top: 20px;
+            background-color: #282c34;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #444;
+        }
+        form input::placeholder, form textarea::placeholder {
+            color: #888;
+        }
+        h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        h2 u {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="C:\Users\shrey\Downloads\ben-kolde-bs2Ba7t69mM-unsplash.jpg" alt="Header Image">
+        <h1>Geetheshw Martha</h1>
+        <p>Student at Vignan University</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is a simple personal portfolio website to showcase my skills and projects.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Geetheshw Martha, a passionate B.Tech student at Vignan University, currently in my third year of studies. I have always been fascinated by technology and its potential to solve real-world problems, which led me to pursue a degree in engineering.</p>
+        <p>My educational journey began at Don Bosco, where I developed a strong foundation in science and mathematics. I continued my education at Sri Chaitanya Hyderabad, where I further honed my analytical and problem-solving skills.</p>
+        <p>Currently, at Vignan University, I am focusing on enhancing my coding skills and exploring various domains within the tech industry. My interests include software development and machine learning. I am particularly drawn to projects that involve predictive analysis and real-time applications.</p>
+        <p>Beyond academics, I am an avid coder who loves participating in hackathons and coding competitions. These experiences have not only strengthened my technical skills but also taught me the importance of teamwork and effective communication.</p>
+        <p>In my free time, I enjoy playing cricket. I am constantly seeking opportunities to learn and grow.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <article class="project">
+            <h3>Road Accident Hotspot Analysis</h3>
+            <p>Assessing website risk using machine learning.</p>
+            <img src="C:\Users\shrey\Downloads\geethproject1" alt="Screenshot of Road Accident Hotspot Analysis">
+        </article>
+        <article class="project">
+            <h3>Fashion Recommendations Using Image Features</h3>
+            <p>Analyzing student performance trends and making predictions.</p>
+            <img src="C:\Users\shrey\Downloads\geethproject2" alt="Screenshot of Fashion Recommendations">
+        </article>
+        <article class="project">
+            <h3>Sales Prediction</h3>
+            <p>A chat application with real-time messaging capabilities.</p>
+            <img src="C:\Users\shrey\Downloads\geethproject3" alt="Screenshot of Sales Prediction">
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2><u>Contact Me</u></h2>
+        <form action="submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Geetheshw Martha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
